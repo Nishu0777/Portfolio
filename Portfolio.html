@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aashlesh Reddy Kommidi - Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #1a1a1a;
+            color: #ffffff;
+            line-height: 1.6;
+            padding: 20px;
+            font-family: 'Roboto', sans-serif; /* Default font for body text */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav {
+            background: #2d2d2d;
+            padding: 1rem;
+            border-radius: 8px;
+            position: sticky;
+            top: 20px;
+            z-index: 100;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #00b4d8;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #90e0ef;
+        }
+
+        section {
+            background: #252525;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        h1, h2 {
+            color: #00b4d8;
+            margin-bottom: 1rem;
+            font-family: 'Playfair Display', serif; /* Stylish font for headings */
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .hero img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            border: 4px solid #00b4d8;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700; /* Bold for emphasis */
+        }
+
+        .contact-links a {
+            color: #90e0ef;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            margin: 0 0.5rem;
+        }
+
+        .skills-grid, .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .skill-item, .project-item {
+            background: #333;
+            padding: 1rem;
+            border-radius: 6px;
+            transition: transform 0.3s;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .skill-item:hover, .project-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-item a {
+            color: #00b4d8;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            color: #777;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section id="home" class="hero">
+            <img src="path-to-your-image.jpg" alt="Aashlesh Reddy Kommidi" class="profile-img">
+            <h1>Aashlesh Reddy Kommidi</h1>
+            <p>Computer Science Student | Full Stack Developer | AI Enthusiast</p>
+            <div class="contact-links">
+                <a href="mailto:aashleshkommidi1@gmail.com">Email</a>
+                <a href="https://linkedin.com/in/aashleshreddy/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Nishu0777" target="_blank">GitHub</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm a Computer Science student at Vaagdevi College of Engineering (2025) with a 7.5 CGPA. Passionate about leveraging technology to solve real-world problems through innovative solutions. Highly motivated with strong problem-solving skills and the ability to work under pressure.</p>
+            <p>Education:</p>
+            <ul>
+                <li>Vaagdevi College of Engineering - B.Tech Computer Science (2025, 7.5 CGPA)</li>
+                <li>Narayana Junior College - Intermediate (M.P.C., 86.8%, 2021)</li>
+                <li>Sri Chaitanya High School - CGPA: 9.8 (2019)</li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">Programming: Python, Java, C, C++, Javascript, Typescript</div>
+                <div class="skill-item">Databases: SQL, MySQL, NoSQL, MongoDB, PostgreSQL, Redis, DynamoDB</div>
+                <div class="skill-item">Frameworks: React, Redux, Express.js, Node.js, TensorFlow, PyTorch</div>
+                <div class="skill-item">Web Dev: Full Stack, RESTful APIs, GraphQL</div>
+                <div class="skill-item">Data Science: Machine Learning, Predictive Analytics, Data Visualization</div>
+                <div class="skill-item">Cloud: AWS, Kubernetes, Docker, Terraform</div>
+                <div class="skill-item">Tools: Git, CI/CD (Jenkins), Jira, Figma</div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <h3>ECommerce Website</h3>
+                    <p>Developed a full-stack e-commerce solution.</p>
+                </div>
+                <div class="project-item">
+                    <h3>1-Click Payment SDK</h3>
+                    <p>Built using React and Presto framework, improving integration time by 60%.</p>
+                </div>
+                <div class="project-item">
+                    <h3>Malware Prediction System</h3>
+                    <p>Advanced ML-based malware detection for Android devices.</p>
+                </div>
+                <div class="project-item">
+                    <h3>AI Customer Service Chatbot</h3>
+                    <p>Created using Gemini API for efficient customer support.</p>
+                </div>
+            </div>
+            <p>Publication: <a href="https://nano-ntp.com/index.php/nano/article/view/4557" target="_blank">Machine Learning and AI in Robotics</a> (June 22, 2024)</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:aashleshkommidi1@gmail.com">aashleshkommidi1@gmail.com</a></p>
+            <p>Phone: +91 9059901591</p>
+            <p>Location: Hanamkonda, Telangana, 506009</p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/aashleshreddy/" target="_blank">linkedin.com/in/aashleshreddy/</a></p>
+        </section>
+
+        <footer>
+            <p>© 2025 Aashlesh Reddy Kommidi. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
